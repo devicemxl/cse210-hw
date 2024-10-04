@@ -26,7 +26,7 @@ public class Resume
 {
     public string _name;
 
-    // Make sure to initialize your list to a new List before you use it.
+    // List of jobs
     public List<Job> _jobs = new List<Job>();
 
     public void Display()
@@ -34,10 +34,10 @@ public class Resume
         Console.WriteLine($"Name: {_name}");
         Console.WriteLine("Jobs: ");
 
-        // Notice the use of the custom data type "Job" in this loop
+        // for each Job in joblist
         foreach (Job job in _jobs)
         {
-            // This calls the Display method on each job
+            // Display the called Job
             job.Display();
         }
     }
