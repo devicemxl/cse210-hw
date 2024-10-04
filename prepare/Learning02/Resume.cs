@@ -28,7 +28,7 @@ public class Resume
 
     // List of jobs
     public List<Job> _jobs = new List<Job>();
-
+    // display
     public void Display()
     {
         Console.WriteLine($"Name: {_name}");
@@ -37,7 +37,7 @@ public class Resume
         // for each Job in joblist
         foreach (Job job in _jobs)
         {
-            // Display the called Job
+            // Display this Job
             job.Display();
         }
     }
